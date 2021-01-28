@@ -62,35 +62,18 @@ template_projects:
     - .settings
     - applications
     - board
-    - build
     - cconfig.h
-    - Debug
     - EventRecorderStub.scvd
     - figures
     - Kconfig
     - libraries
     - makefile.targets
-    - project.ewd
-    - project.ewp
-    - project.eww
-    - project.uvopt
-    - project.uvoptx
-    - project.uvproj
-    - project.uvprojx
     - README.md
     - rtconfig.h
     - rtconfig.py
-    - rtconfig.pyc
     - rtconfig_preinc.h
     - SConscript
     - SConstruct
-    - template.ewd
-    - template.ewp
-    - template.eww
-    - template.uvopt
-    - template.uvoptx
-    - template.uvproj
-    - template.uvprojx
     source_path_offset: project_0
     target_path_offset: ''
   external_files:
