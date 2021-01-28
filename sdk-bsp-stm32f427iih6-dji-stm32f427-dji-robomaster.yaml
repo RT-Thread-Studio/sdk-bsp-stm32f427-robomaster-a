@@ -1,0 +1,116 @@
+board:
+  buy_url_cn: https://store.dji.com/cn/product/rm-development-board-type-a
+  buy_url_global: https://store.dji.com/cn/product/rm-development-board-type-a
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: RobMaster Development Board Kit is an open-source master control
+    kit for DIY robots. The main control chip of the development board is STM32F427IIH6,
+    which has rich expansion interfaces and communication interfaces. The onboard
+    IMU sensor can be used with Robomaster M3508, M2006 brushless DC motor, UWB module,
+    Manifold, and other products, and can also be used with DJI flight control SDK,
+    with rich accessories.
+  description_zh: RoboMaster开发板套件是一款面向机器人DIY的开源主控套件。开发板主控芯片为STM32F427IIH6，拥有丰富的扩展接口和通信接口，板载IMU传感器，可配合RoboMaster出品的M3508、
+    M2006直流无刷减速电机、UWB模块以及妙算等产品使用，亦可配合DJI飞控SDK使用，配件丰富。
+  emulator_machine: ''
+  large_image: documents/images/board_large.png
+  name: STM32F427-DJI-ROBOMASTER
+  price_cn: 429 CNY
+  price_global: 66.19 USD
+  sale_contact_cn: https://www.robomaster.com/zh-CN/products/components/general/development-board
+  sale_contact_global: https://www.robomaster.com/zh-CN/products/components/general/development-board
+  small_image: documents/images/board.png
+  vendor: DJI
+  version: A
+chip:
+  chip_name: STM32F427IIH6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F4
+  source_freq: '8000000'
+  sub_series_name: STM32F427
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/RoboMaster 开发板A型使用说明.pdf
+  title: RoboMaster 开发板A型使用说明
+example_projects: []
+features:
+- 'MCU: STM32F427IIH6, Master Frequency 180MHz, 2048KB Flash, 256KB RAM(Including
+  64KB CCM RAM not used)'
+- 'LED: 2 PCS, D10 (red, PE11), D9 (green, PE14)'
+- 'Commonly used interface: SD card interface and OLED interface'
+- Debugging interface, standard JTAG/SWD
+features_zh:
+- MCU：STM32f427IIH6，主频 180MHz，2048KB FLASH ，256KB RAM(含64KB CCM RAM未使用)
+- LED：2个，D10（红色，PE11），D9（绿色，PE14）
+- '常用接口：SD 卡接口 OLED接口 '
+- 调试接口，标准 JTAG/SWD
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - build
+    - cconfig.h
+    - Debug
+    - EventRecorderStub.scvd
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvproj
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig.pyc
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewd
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvproj
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: STM32F427_RoboMaster_A
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
